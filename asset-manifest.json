@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nox/static/css/main.f5cfb3a1.css",
-    "main.js": "/Nox/static/js/main.bf973603.js",
+    "main.js": "/Nox/static/js/main.6e98c9c6.js",
     "static/js/787.7559f7c3.chunk.js": "/Nox/static/js/787.7559f7c3.chunk.js",
     "static/media/fa-solid-900.ttf": "/Nox/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/Nox/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
@@ -17,11 +17,11 @@
     "static/media/blue_square_2-svg": "/Nox/static/media/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.de1a664e8d0777ca4ddb2a5a298bcfb6.svg",
     "index.html": "/Nox/index.html",
     "main.f5cfb3a1.css.map": "/Nox/static/css/main.f5cfb3a1.css.map",
-    "main.bf973603.js.map": "/Nox/static/js/main.bf973603.js.map",
+    "main.6e98c9c6.js.map": "/Nox/static/js/main.6e98c9c6.js.map",
     "787.7559f7c3.chunk.js.map": "/Nox/static/js/787.7559f7c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5cfb3a1.css",
-    "static/js/main.bf973603.js"
+    "static/js/main.6e98c9c6.js"
   ]
 }
