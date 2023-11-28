@@ -34,8 +34,6 @@ object-assign
   and limitations under the License.
   ***************************************************************************** */
 
-/*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
-
 /**
  * @license React
  * react-dom.production.min.js
