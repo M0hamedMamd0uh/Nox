@@ -1,6 +1,7 @@
 import React from "react";
 import {
   RouterProvider,
+  createBrowserRouter,
   createHashRouter,
 } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
@@ -25,7 +26,7 @@ import { Helmet } from "react-helmet";
 import favicon from "./Images/movie-camera.png";
 import Search from "./Components/Search/Search";
 import { QueryClient, QueryClientProvider } from "react-query";
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
