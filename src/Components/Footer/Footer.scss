@@ -1,0 +1,45 @@
+/* Start Footer  */
+.footer {
+  background-color: #032541;
+  color: #fff;
+
+  .content {
+    margin: auto;
+    > .box {
+      flex-grow: 1;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      h2 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      h6 {
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 15px;
+        transition: 0.5s;
+        &:hover {
+          color: #ccc;
+        }
+      }
+      img {
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer .content {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    > .box {
+      width: 50%;
+      &:first-child {
+        display: none !important;
+      }
+    }
+  }
+}
+/* End Footer  */

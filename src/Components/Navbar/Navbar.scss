@@ -1,0 +1,175 @@
+.navbar {
+  background-color: #032541;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s;
+  .nav-container {
+    padding: 0 40px;
+  }
+  .navbar-brand {
+    cursor: pointer;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+    padding: 10px 0;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .navbar-toggler {
+    border-color: transparent;
+    padding: 0;
+    &:focus {
+      box-shadow: 0 0 5px #ffffff72;
+    }
+    i {
+      color: #fff;
+    }
+  }
+  .navbar-nav {
+    a {
+      color: #fff;
+      padding: 20px 0;
+      transition: 0.5s;
+    }
+    .searchBoxSmallScreen {
+      padding: 20px 0;
+    }
+    li {
+      .searchBoxLink {
+        box-shadow: 0px 0px 5px #ccc;
+        border-radius: 0 10px 0 10px !important;
+        .container-fluid {
+          padding: 0 40px;
+          input {
+            padding: 12px 0;
+            &:focus {
+              outline: none !important;
+              box-shadow: none !important;
+            }
+          }
+          .clearAll {
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+              background-color: #777;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .section-link {
+      position: relative;
+      .nav-link {
+        cursor: pointer;
+        &:hover {
+          color: #989898;
+        }
+      }
+      &:hover {
+        li:hover {
+          background: #484848;
+          color: #fff;
+        }
+      }
+    }
+    .section-dropdown {
+      right: 0;
+      color: #fff;
+      background-color: #0a0a0ad9;
+      border-radius: 1px;
+      z-index: 999;
+      &:last-child {
+        margin-bottom: 10px;
+      }
+      li {
+        cursor: pointer;
+        font-size: 17px;
+        // padding: 10px;
+        transition: 0.3s;
+
+        span {
+          width: 100%;
+          display: inline-block;
+          padding: 10px;
+        }
+        &:hover {
+          color: #222;
+          a {
+            padding-left: 10px;
+            color: #fff;
+          }
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .searchBox {
+    top: 65px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .container-fluid {
+      padding: 0 40px;
+      input {
+        padding: 12px 0;
+        &:focus {
+          outline: none !important;
+          box-shadow: none !important;
+        }
+      }
+      .clearAll {
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: #777;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .search-open-close-Icons {
+    display: none;
+  }
+  .searchBox {
+    display: none !important;
+  }
+  .searchBoxSmallScreen {
+    display: block !important;
+  }
+  .navbar .navbar-nav li .searchBoxLink .container-fluid {
+    padding: 0 10px;
+  }
+  .navbar .navbar-nav li .searchBoxLink .container-fluid input {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav .section-link:hover .section-dropdown {
+    /* Important overwrite jquery code in larger screen */
+    display: block !important;
+  }
+}
+
+/* for make navbar alaways appear in small screen and do not effect by scroll */
+/* @media (max-width: 991px) {
+  .navbar {
+    opacity: 1 !important;
+  }
+} */
